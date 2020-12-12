@@ -5,5 +5,4 @@ Commands have been stripped for various reasons. Two of them being they require 
 Fill in the .example.env like this: 
 ```
 TOKEN=DISCORD BOT TOKEN
-PREFIX=DISCORD BOT PREFIX
-``` and rename it to .env
+PREFIX=DISCORD BOT PREFIX``` and rename it to .env
