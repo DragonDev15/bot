@@ -26,3 +26,6 @@ Bot hosting is how the bot Stays online 24/7 (Most Hosting Services are paid)
 > - [Invite Animal Bot](https://discord.com/oauth2/authorize?client_id=716061781172158464&permissions=51200&scope=bot)
 > - [Website](https://www.animalbot.xyz)
 > - [Top.gg Page](https://top.gg/bot/716061781172158464/vote)
+
+###### Any Questions? Contact me: `Matthew.#9014`
+
