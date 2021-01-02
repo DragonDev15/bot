@@ -28,4 +28,4 @@ Bot hosting is how the bot Stays online 24/7 (Most Hosting Services are paid)
 > - [Top.gg Page](https://top.gg/bot/716061781172158464/vote)
 
 ###### Any Questions? Contact me: `Matthew.#9014`
-
+- Edited by `Dragon_15#0001` [Click Here](https://www.dynamobot.xyz)
