@@ -29,4 +29,5 @@ Bot hosting is how the bot Stays online 24/7 (Most Hosting Services are paid)
 
 #### Any Questions? Contact me: `Matthew.#9014`
 > Edited by `Dragon_15#0001`. Their bot, [Dynamo](https://www.dynamobot.xyz)
-###### Any Questions? Contact me: `Matthew.#9014`
+
+###### © Animal Bot 2020 - 2021
