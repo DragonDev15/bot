@@ -92,46 +92,48 @@ const mayresponses = [
   'I hope we\'re not barred from Argentina - I\'d quite like to go back for another ham and cheese sandwich.',
   'I\'ve never wanted to be on television for the sake of it, I suppose because I\'m not one of life\'s natural presenters; I\'m not an actor.',
 ];
-exports.aliases = [];
-exports.name = 'quote';
-exports.module = 'Fun';
-exports.usage = 'quote <old top gear presenter\'s last name>';
-exports.run = (client, message, args) => {
-  const SayArgs = args.join(' ');
-  if (SayArgs === 'help' || args.length === 0) {
-    const randomColor = Math.floor(Math.random()*16777215).toString(16); // randomizes colour, use this for every embed.
-    const HelpEmbed = new Discord.MessageEmbed() // creates the embed
-        .setColor('#' + randomColor) // various settings (including using the randColour)
-        .setAuthor('Quote arguments')// author
-        .addFields(
-            {name: `${client.prefix}quote may`, value: '`Responds with a James May quote`', inline: false},
-            {name: `${client.prefix}quote hammond`, value: '`Responds with a Richard Hammond quote`', inline: false},
-            {name: `${client.prefix}quote clarkson`, value: '`Responds with a Jeremy Clarkson quote`', inline: false},
-        );
-    return message.channel.send(HelpEmbed);
-  } else if (SayArgs === 'clarkson') {
-    const randomIndex = Math.floor(Math.random() * clarksonresponses.length);
-    const ClarksonEmbed = new Discord.MessageEmbed()
-        .setColor('RANDOM')
-        .setDescription('**'+clarksonresponses[randomIndex]+'**')
-        .setFooter(client.config.embedFooter)
-        .setFooter('― Jeremy Clarkson');
-    message.channel.send(ClarksonEmbed);
-  } else if (SayArgs === 'may') {
-    const randomIndex = Math.floor(Math.random() * mayresponses.length);
-    const MayEmbed = new Discord.MessageEmbed()
-        .setColor('RANDOM')
-        .setDescription('**'+mayresponses[randomIndex]+'**')
-        .setFooter(client.config.embedFooter)
-        .setFooter('― James May');
-    message.channel.send(MayEmbed);
-  } else if (SayArgs === 'hammond') {
-    const randomIndex = Math.floor(Math.random() * hammondresponses.length);
-    const HammondEmbed = new Discord.MessageEmbed()
-        .setColor('RANDOM')
-        .setDescription('**'+hammondresponses[randomIndex]+'**')
-        .setFooter(client.config.embedFooter)
-        .setFooter('― Richard Hammond');
-    message.channel.send(HammondEmbed);
-  }
+module.exports = {
+  aliases: [],
+  name: 'quote',
+  module: 'Fun',
+  usage: 'quote <old top gear presenter\'s last name>',
+  run: (client, message, args) => {
+    const SayArgs = args.join(' ');
+    if (SayArgs === 'help' || args.length === 0) {
+      const randomColor = Math.floor(Math.random()*16777215).toString(16); // randomizes colour, use this for every embed.
+      const HelpEmbed = new Discord.MessageEmbed() // creates the embed
+          .setColor('#' + randomColor) // various settings (including using the randColour)
+          .setAuthor('Quote arguments')// author
+          .addFields(
+              {name: `${client.prefix}quote may`, value: '`Responds with a James May quote`', inline: false},
+              {name: `${client.prefix}quote hammond`, value: '`Responds with a Richard Hammond quote`', inline: false},
+              {name: `${client.prefix}quote clarkson`, value: '`Responds with a Jeremy Clarkson quote`', inline: false},
+          );
+      return message.channel.send(HelpEmbed);
+    } else if (SayArgs === 'clarkson') {
+      const randomIndex = Math.floor(Math.random() * clarksonresponses.length);
+      const ClarksonEmbed = new Discord.MessageEmbed()
+          .setColor('RANDOM')
+          .setDescription('**'+clarksonresponses[randomIndex]+'**')
+          .setFooter(client.config.embedFooter)
+          .setFooter('― Jeremy Clarkson');
+      message.channel.send(ClarksonEmbed);
+    } else if (SayArgs === 'may') {
+      const randomIndex = Math.floor(Math.random() * mayresponses.length);
+      const MayEmbed = new Discord.MessageEmbed()
+          .setColor('RANDOM')
+          .setDescription('**'+mayresponses[randomIndex]+'**')
+          .setFooter(client.config.embedFooter)
+          .setFooter('― James May');
+      message.channel.send(MayEmbed);
+    } else if (SayArgs === 'hammond') {
+      const randomIndex = Math.floor(Math.random() * hammondresponses.length);
+      const HammondEmbed = new Discord.MessageEmbed()
+          .setColor('RANDOM')
+          .setDescription('**'+hammondresponses[randomIndex]+'**')
+          .setFooter(client.config.embedFooter)
+          .setFooter('― Richard Hammond');
+      message.channel.send(HammondEmbed);
+    }
+  },
 };

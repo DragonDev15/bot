@@ -2,24 +2,24 @@
 const Discord = require('discord.js');
 const Canvas = require('canvas');
 const {words} = require('../words.json');
-const recent = new Map();
-exports.aliases = [];
-exports.name = 'phrase';
-exports.module = 'Fun';
-exports.usage = 'phrase';
-exports.run = async (client, message, args) => {
-  const phraseArgs = args.join(' ');
-  if (phraseArgs === 'help') {
-    const HelpEmbed = new Discord.MessageEmbed()
-        .setColor('RANDOM')
-        .setAuthor('Phrase arguments')
-        .setFooter(client.config.embedFooter)
-        .addFields(
-            {name: `${client.prefix}phrase help`, value: '`This message`', inline: false},
-            {name: `${client.prefix}phrase`, value: '`Quick typing challenge (words must be seperated by space)`', inline: false},
-        );
-    return message.reply(HelpEmbed);
-  } else {
+module.exports = {
+  aliases: [],
+  name: 'phrase',
+  module: 'Fun',
+  usage: 'phrase',
+  run: async (client, message, args) => {
+    const phraseArgs = args.join(' ');
+    if (phraseArgs === 'help') {
+      const HelpEmbed = new Discord.MessageEmbed()
+          .setColor('RANDOM')
+          .setAuthor('Phrase arguments')
+          .setFooter(client.config.embedFooter)
+          .addFields(
+              {name: `${client.prefix}phrase help`, value: '`This message`', inline: false},
+              {name: `${client.prefix}phrase`, value: '`Quick typing challenge (words must be seperated by space)`', inline: false},
+          );
+      return message.reply(HelpEmbed);
+    } else {
       const randomIndex = Math.floor(Math.random() * words.length);
       const randomindex = Math.floor(Math.random() * words.length);
       const filter = (response) => response.content.toLowerCase() === `${words[randomIndex]} ${words[randomindex]}`;
@@ -46,5 +46,6 @@ exports.run = async (client, message, args) => {
           message.channel.send(`Nobody was quick enough :timer:`);
         });
       });
-  }
+    }
+  },
 };

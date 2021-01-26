@@ -1,11 +1,11 @@
 /* eslint-disable max-len */
 const Discord = require('discord.js');
-exports.aliases = ['yesno'];
-exports.name = 'poll';
-exports.module = 'Fun';
-exports.usage = 'poll <decision to be made>';
-exports.run = (client, message, args) => {
-    if (!message.channel.permissionsFor(message.guild.me).has('ADD_REACTIONS')) return;
+module.exports = {
+  aliases: ['yesno'],
+  name: 'poll',
+  module: 'Fun',
+  usage: 'poll <decision to be made>',
+  run: (client, message, args) => {
     const pollArg = args.join(' ');
     if (pollArg.length === 0 || pollArg === 'help') {
       const HelpEmbed = new Discord.MessageEmbed()
@@ -27,4 +27,5 @@ exports.run = (client, message, args) => {
     message.channel.send(PollEmbed).then(function(message) {
       message.react('✔️').then(message.react('❌'));
     });
+  },
 };

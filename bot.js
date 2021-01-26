@@ -9,10 +9,10 @@ const client = new Discord.Client({
   ws: {intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_MESSAGE_REACTIONS']},
 });
 const fs = require('fs');
-const config = require('./config.json')
+const config = require('./config.json');
 require('dotenv').config();
 client.config = config;
-client.prefix = process.env.PREFIX
+client.prefix = process.env.PREFIX;
 
 client.on('ready', async () => {
   console.log(`[NOTICE] ${client.user.tag} Shard ${client.shard.ids} now ready`);
