@@ -11,6 +11,9 @@ PREFIX = Bot Prefix
 ```
 2. Then Rename it to `.env`
 > Notes: [How to get a token](https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-token) | [What is a prefix](https://anidiots.guide/first-bot/your-first-bot#using-a-prefix)
+3. Now you can run the bot using ```sh
+npm run bot
+```
 
 ##### Hosting Options:
 > What is bot Hosting?

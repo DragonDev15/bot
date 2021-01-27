@@ -4,10 +4,14 @@
     "discord.js-light": "^3.2.11",
     "node-fetch": "^2.6.1",
     "os": "^0.1.1",
-    "parse-ms": "^2.1.0"
+    "parse-ms": "^2.1.0",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "eslint": "^7.18.0",
     "eslint-config-google": "^0.14.0"
+  },
+  "scripts": {
+    "bot": "npm i && node bot.js"
   }
 }
