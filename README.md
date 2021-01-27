@@ -34,7 +34,7 @@ Bot hosting is how the bot Stays online 24/7 (Most Hosting Services are paid)
 The error in question here is ```
 npm ERR! Failed at the canvas@2.6.1 install script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.```.
-To fix this run: `npm install --global windows-build-tools` in an admin powershell window
+To fix this run: `npm install --global --production windows-build-tools` in an admin powershell window
 
 #### Any Questions? Contact me: `Matthew.#9014`
 > Edited by `Dragon_15#0001`. Their bot, [Dynamo](https://www.dynamobot.xyz)
