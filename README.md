@@ -47,6 +47,7 @@ Now configuring the Visual Studio Build Tools and Python...
 
 All done!
 ```
+If your VS Build Tools gets stuck download them manually from [here](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15)
 ---
 #### Any Questions? Contact me: `Matthew.#9014`
 > Edited by `Dragon_15#0001`. Their bot, [Dynamo](https://www.dynamobot.xyz)
