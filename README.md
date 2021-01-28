@@ -12,6 +12,7 @@ PREFIX = Bot Prefix
 2. Then Rename it to `.env`
 3. Now you can run the bot using ```npm run bot```
 > Notes: [How to get a token](https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-token) | [What is a prefix](https://anidiots.guide/first-bot/your-first-bot#using-a-prefix)
+3. Now you can run the bot using ```npm run bot```
 
 ## Basic troubleshooting
 ### Canvas not building?
@@ -33,6 +34,8 @@ Now configuring the Visual Studio Build Tools and Python...
 All done!
 ```
 If your VS Build Tools gets stuck download them manually from [here](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15). You'll need C++ build tools.
+=======
+
 ## Hosting Options:
 > What is bot Hosting?
 Bot hosting is how the bot Stays online 24/7 (Most Hosting Services are paid)
@@ -48,7 +51,6 @@ Bot hosting is how the bot Stays online 24/7 (Most Hosting Services are paid)
 > - [Website](https://www.animalbot.xyz)
 > - [Top.gg Page](https://top.gg/bot/716061781172158464/vote)
 
----
 
 > Edited by `Dragon_15#0001`. Their bot, [Dynamo](https://www.dynamobot.xyz)
 #### Any Questions? Contact me: `Matthew.#9014`
